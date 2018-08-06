@@ -1,0 +1,31 @@
+package com.cisco.collabNextGen.pageobjects;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.cisco.collabNextGen.common.DriverManager;
+
+public class HomePage {
+
+	@FindBy(xpath = "")
+	private WebElement logoPic;
+
+	public CollectorPage navigateToCollector(){
+
+		return PageFactory.initElements(DriverManager.driver, CollectorPage.class);
+	}
+
+	public AnalysisPage navigateToAnalysis(){
+
+		return PageFactory.initElements(DriverManager.driver, AnalysisPage.class);
+
+	}
+
+	public ReportingPage navigateToReporting(){
+
+		return PageFactory.initElements(DriverManager.driver, ReportingPage.class);
+
+	}
+
+}

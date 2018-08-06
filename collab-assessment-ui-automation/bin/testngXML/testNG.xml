@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="END TO END">
+	
+	<test name="Sample Test">
+		<parameter name="Selenium.browser" value="Chrome"></parameter>
+        <classes>
+            <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo" ></class>  
+        </classes>
+    </test>
+    <test name="Sample Test1">
+		<parameter name="Selenium.browser" value="Firefox"></parameter>
+        <classes>
+            <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo" ></class>  
+        </classes>
+    </test>
+    <test name="Sample Test2">
+		<parameter name="Selenium.browser" value="IE"></parameter>
+        <classes>
+            <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo" ></class>  
+        </classes>
+    </test>
+</suite>

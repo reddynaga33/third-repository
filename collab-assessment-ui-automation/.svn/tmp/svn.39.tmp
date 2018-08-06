@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-END_TO_END">
+              <span class="suite-name border-failed">END TO END</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-END_TO_END">
+                    <span>C:\Users\anagarja\UIAutomation\collab-assesment-ui-automation\testngXML\EndToEndWorkFlow.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-END_TO_END">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-END_TO_END">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-END_TO_END">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-END_TO_END">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-END_TO_END">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-END_TO_END">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-END_TO_END" class="hide-methods failed suite-END_TO_END"> (hide)</a> <!-- hide-methods failed suite-END_TO_END -->
+                      <a href="#" panel-name="suite-END_TO_END" class="show-methods failed suite-END_TO_END"> (show)</a> <!-- show-methods failed suite-END_TO_END -->
+                    </span>
+                    <div class="method-list-content failed suite-END_TO_END">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-END_TO_END" title="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest" hash-for-method="checkConnectivityStatus">checkConnectivityStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-END_TO_END -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-END_TO_END" class="hide-methods skipped suite-END_TO_END"> (hide)</a> <!-- hide-methods skipped suite-END_TO_END -->
+                      <a href="#" panel-name="suite-END_TO_END" class="show-methods skipped suite-END_TO_END"> (show)</a> <!-- show-methods skipped suite-END_TO_END -->
+                    </span>
+                    <div class="method-list-content skipped suite-END_TO_END">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-END_TO_END" title="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest" hash-for-method="initializeCollection">initializeCollection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-END_TO_END" title="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest" hash-for-method="startAnalysisJobTest">startAnalysisJobTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-END_TO_END" title="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest" hash-for-method="startReportTest">startReportTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-END_TO_END -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-END_TO_END" class="hide-methods passed suite-END_TO_END"> (hide)</a> <!-- hide-methods passed suite-END_TO_END -->
+                      <a href="#" panel-name="suite-END_TO_END" class="show-methods passed suite-END_TO_END"> (show)</a> <!-- show-methods passed suite-END_TO_END -->
+                    </span>
+                    <div class="method-list-content passed suite-END_TO_END">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-END_TO_END" title="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest" hash-for-method="adddeviceAndTestConnectivity">adddeviceAndTestConnectivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-END_TO_END" title="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-END_TO_END -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-END_TO_END" class="panel END_TO_END">
+          <div class="suite-END_TO_END-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cisco.collabNextGen.endtoend.tests.WorkFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkConnectivityStatus">
+                  </a> <!-- checkConnectivityStatus -->
+                  <span class="method-name">checkConnectivityStatus</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[div[text()=&apos;CUCM_Device96&apos;]]/following-sibling::div//a[text()=&apos;Start Collection&apos;]&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;ANAGARJA-G2C70&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\anagarja\AppData\Local\Temp\scoped_dir2840_31358}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e2c9d04695db317a47db3f0594b6fe88
+*** Element info: {Using=xpath, value=//div[div[text()=&apos;CUCM_Device96&apos;]]/following-sibling::div//a[text()=&apos;Start Collection&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.cisco.collabNextGen.pageobjects.ConnectivityPage.startCollection(ConnectivityPage.java:77)
+	at com.cisco.collabNextGen.pageobjects.ConnectivityPage.navigateToScheduleCollection(ConnectivityPage.java:52)
+	at com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus(WorkFlowTest.java:47)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-END_TO_END-class-failed -->
+          <div class="suite-END_TO_END-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cisco.collabNextGen.endtoend.tests.WorkFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="initializeCollection">
+                  </a> <!-- initializeCollection -->
+                  <span class="method-name">initializeCollection</span>
+                  <div class="stack-trace">java.lang.Throwable: Method WorkFlowTest.initializeCollection()[pri:3, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="startAnalysisJobTest">
+                  </a> <!-- startAnalysisJobTest -->
+                  <span class="method-name">startAnalysisJobTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method WorkFlowTest.startAnalysisJobTest()[pri:4, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="startReportTest">
+                  </a> <!-- startReportTest -->
+                  <span class="method-name">startReportTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method WorkFlowTest.startReportTest()[pri:5, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-END_TO_END-class-skipped -->
+          <div class="suite-END_TO_END-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cisco.collabNextGen.endtoend.tests.WorkFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adddeviceAndTestConnectivity">
+                  </a> <!-- adddeviceAndTestConnectivity -->
+                  <span class="method-name">adddeviceAndTestConnectivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-END_TO_END-class-passed -->
+        </div> <!-- panel END_TO_END -->
+        <div panel-name="test-xml-END_TO_END" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\anagarja\UIAutomation\collab-assesment-ui-automation\testngXML\EndToEndWorkFlow.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;END TO END&quot;&gt;
+  &lt;test name=&quot;Sample Test&quot;&gt;
+    &lt;parameter name=&quot;Selenium.browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cisco.collabNextGen.endtoend.tests.WorkFlowTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sample Test --&gt;
+&lt;/suite&gt; &lt;!-- END TO END --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-END_TO_END" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for END TO END</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Sample Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-END_TO_END" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for END TO END</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-END_TO_END" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for END TO END</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_END_TO_END');
+function tableData_END_TO_END() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'adddeviceAndTestConnectivity')
+data.setCell(0, 2, 'com.cisco.collabNextGen.endtoend.tests.WorkFlowTest')
+data.setCell(0, 3, 59212);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkConnectivityStatus')
+data.setCell(1, 2, 'com.cisco.collabNextGen.endtoend.tests.WorkFlowTest')
+data.setCell(1, 3, 50627);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.cisco.collabNextGen.endtoend.tests.WorkFlowTest')
+data.setCell(2, 3, 8401);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'startReportTest')
+data.setCell(3, 2, 'com.cisco.collabNextGen.endtoend.tests.WorkFlowTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'initializeCollection')
+data.setCell(4, 2, 'com.cisco.collabNextGen.endtoend.tests.WorkFlowTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'startAnalysisJobTest')
+data.setCell(5, 2, 'com.cisco.collabNextGen.endtoend.tests.WorkFlowTest')
+data.setCell(5, 3, 0);
+window.suiteTableData['END_TO_END']= { tableData: data, tableDiv: 'times-div-END_TO_END'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-END_TO_END">
+              </div> <!-- times-div-END_TO_END -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-END_TO_END" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for END TO END</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-END_TO_END" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-END_TO_END" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cisco.collabNextGen.endtoend.tests.WorkFlowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup(org.testng.TestRunner@42deb43a)</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">4241 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">4248 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.loginTest() throws java.lang.Interru...)</span>
+                <span class="method-start">4281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setTestMethodName(public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.loginTest() throws java.lang.Interru...)</span>
+                <span class="method-start">4283 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">4284 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=loginTest status=SUCCESS method=WorkFlowTest.loginTest()[pri:0, instance:com.cisco....)</span>
+                <span class="method-start">12686 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">adddeviceAndTestConnectivity</span>
+                <span class="method-start">13253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.adddeviceAndTestConnectivity() throw...)</span>
+                <span class="method-start">13253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setTestMethodName(public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.adddeviceAndTestConnectivity() throw...)</span>
+                <span class="method-start">13253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=adddeviceAndTestConnectivity status=SUCCESS method=WorkFlowTest.adddeviceAndTestCon...)</span>
+                <span class="method-start">72466 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus() throws jav...)</span>
+                <span class="method-start">72567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkConnectivityStatus</span>
+                <span class="method-start">72567 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setTestMethodName(public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus() throws jav...)</span>
+                <span class="method-start">72567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=checkConnectivityStatus status=FAILURE method=WorkFlowTest.checkConnectivityStatus(...)</span>
+                <span class="method-start">123194 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">123361 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

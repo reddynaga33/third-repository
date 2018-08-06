@@ -1,0 +1,133 @@
+package com.cisco.collabNextGen.utilities;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+import com.cisco.collabNextGen.common.DriverManager;
+
+/**
+ * This class contains reusable methods of WebDriver.
+ * @author Giri
+ *
+ */     
+
+ 
+public class WebDriverUtilities  {
+	
+	
+	
+	public String getText(WebElement obj)
+	{
+		
+		
+	    String text=	obj.getText();
+	
+	
+	    return text;
+			
+		
+	}
+	
+	
+	public List<WebElement> getElements(List<WebElement> obj)
+	{
+		
+		
+		 List<WebElement> items= obj;
+		
+		 return items;
+			
+	}
+	
+	public WebElement getsingleelement(List<WebElement> obj, int index)
+	{
+		
+		
+		 WebElement item= obj.get(index);
+		
+		 return item;
+			
+	}
+	
+	
+	
+	public void sendtext(String text, WebElement obj)
+	{
+		
+		obj.sendKeys(text);
+		
+	}
+	
+	public void click(WebElement obj)
+	{
+		
+		obj.click();
+		
+	}
+	
+    public void selectDropDownByValue(WebElement obj ,String value)
+    {
+	 
+	   Select s=new Select(obj);
+	   s.selectByValue(value);
+	 
+    }
+    public void SelectDropDownByIndex(WebElement obj, int indexnum)
+    {
+	 
+	   Select s=new Select(obj);
+	   s.selectByIndex(indexnum);
+	 
+   }
+   public void SelectDropDownByText(WebElement obj,String text)
+    {
+	  
+      Select s=new Select(obj);
+      s.selectByVisibleText(text);
+      
+    }
+  
+   public void DeselectItemByindex(WebElement obj, int num)
+    {
+	  Select s=new Select(obj);
+	  s.deselectByIndex(num);
+	  
+    }
+   
+   public void DeSelectItemByValue(WebElement obj,String value)
+   {
+	   
+	   Select s=new Select(obj);
+	   s.deselectByValue(value);
+   }
+   
+   public void DeSelectItemByText(WebElement obj, String text)
+   {
+	   
+	   Select s= new Select(obj);
+	   s.selectByVisibleText(text);
+	   
+   }
+   public void DragAndDropItem(WebElement sourceObj, WebElement targetObj)
+   
+   {
+	   
+	   Actions action=new Actions(DriverManager.driver);
+	   action.dragAndDrop(sourceObj, targetObj).build().perform();
+	   
+   }
+   
+   public void ClickAndHoldItem(WebElement SourceObj, WebElement targetObj)
+   {
+	   
+	   Actions action=new Actions(DriverManager.driver);
+	   action.clickAndHold(SourceObj).moveToElement(targetObj).release().perform();
+	   
+	   
+	   
+   
+}
+}

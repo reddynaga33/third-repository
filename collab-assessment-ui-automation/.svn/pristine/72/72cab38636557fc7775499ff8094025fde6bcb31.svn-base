@@ -1,0 +1,239 @@
+package com.cisco.collabNextGen.utilities;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+import com.cisco.collabNextGen.common.DriverManager;
+import org.openqa.selenium.WebDriver;
+
+/**
+ * This class contains reusable methods of WebDriver.
+ * @author Nagarjuna
+ *
+ */     
+public class WebDriverUtilities  {
+	/**
+	 * These method is used to get text of web Element
+	 * @param wE web element object should provide
+	 * @return String- Returns the text from the web element  
+	 */
+
+	public String getText(WebElement wE){
+		String text=wE.getText();
+		return text;
+	}
+
+	public boolean selectByVisibleText(WebElement selectDropDown, String visibleText){
+		try{
+			Select select = new Select(selectDropDown);
+			select.selectByVisibleText(visibleText);
+
+		}catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+
+	/**
+	 * These method is used to get the list of web elements
+	 * @param wE web element object should provide
+	 * @return List-Returns the list of items from Web element
+	 */
+
+	public List<WebElement> getElements(List<WebElement> wE)
+	{
+
+
+		List<WebElement> items= wE;
+
+		return items;
+
+	}
+
+	/**
+	 * These method used to get the single web element from list of web elements
+	 * @param wE web element object should provide
+	 * @param index number should be provided
+	 * @return Web element- return a web element item
+	 */
+	public WebElement getSingleElement(List<WebElement> wE, int index)
+	{
+
+
+		WebElement item= wE.get(index);
+
+		return item;
+
+	}
+
+
+	/**
+	 * These method is used to send a text to the WebElement
+	 * @param text desired text should be provided
+	 * @param we Web Element object should be provided
+	 */
+	public void sendtext(String text, WebElement wE)
+	{
+
+		wE.sendKeys(text);
+
+	}
+
+	/**
+	 * 
+	 * @param wE Web Element object should provide
+	 */
+
+	public void click(WebElement wE)
+	{
+
+		wE.click();
+
+	}
+
+	/**
+	 *These method used to select the item in drop down list
+	 * 
+	 * @param wE Web Element object should be provided
+	 * @param value of select able item provided
+	 */
+
+	public void selectDropDownByValue(WebElement wE ,String value)
+	{
+
+		Select s=new Select(wE);
+		s.selectByValue(value);
+
+	}
+
+	/**
+	 *These method used to select the item in drop down list
+	 * 
+	 * @param wE Web element  object should be provided
+	 * @param indexnum number  of select able item provided
+	 */
+	public void SelectDropDownByIndex(WebElement wE, int indexnum)
+	{
+
+		Select s=new Select(wE);
+		s.selectByIndex(indexnum);
+
+	}
+	/**
+	 *These method used to select the item in drop down list
+	 * 
+	 * @param wE WEB element object should be provided
+	 * @param text   of select able item provided
+	 */
+	public void SelectDropDownByText(WebElement wE,String text)
+	{
+
+		Select s=new Select(wE);
+		s.selectByVisibleText(text);
+
+	}
+
+	/**
+	 *These method used to Deselect the item in drop down list
+	 * 
+	 * @param wE web element  object should be provided
+	 * @param num number  of deselectable item provided
+	 */
+
+	public void DeselectItemByindex(WebElement wE, int indexNum)
+	{
+		Select s=new Select(wE);
+		s.deselectByIndex(indexNum);
+
+	}
+
+	/**
+	 *These method used to Deselect the item in drop down list
+	 * 
+	 * @param wE element object should be provided
+	 * @param value  of deselectable item provided
+	 */
+
+	public void DeSelectItemByValue(WebElement wE,String value)
+	{
+
+		Select s=new Select(wE);
+		s.deselectByValue(value);
+	}
+
+	/**
+	 *These method used to Deselect the item in drop down list
+	 * 
+	 * @param wE web element object should be provided
+	 * @param text  of deselectable item provided
+	 */
+
+	public void DeSelectItemByText(WebElement wE, String text)
+	{
+
+		Select s= new Select(wE);
+		s.selectByVisibleText(text);
+
+	}
+
+	/**
+	 * These method is used to Drag and drop the item in desired location.
+	 * @param sourceObj web element of the source should be provide.
+	 * @param targetObj  web element of the target should be provided
+	 */
+	public void DragAndDropItem(WebElement sourceObj, WebElement targetObj)
+
+	{
+
+		Actions action=new Actions(DriverManager.driver);
+		action.dragAndDrop(sourceObj, targetObj).build().perform();
+
+	}
+
+	/**
+	 * These method is used to hold the item and drop  item in desired location by moving the element
+	 * @param SourceObj web element of the source should be provided
+	 * @param targetObj web element of the target should be provided
+	 * 
+	 */
+	public boolean ClickAndHoldItem(WebElement SourceObj, WebElement targetObj)
+	{
+
+		try{
+
+			Actions action=new Actions(DriverManager.driver);
+			action.clickAndHold(SourceObj).moveToElement(targetObj).release().perform();
+
+
+
+
+		}catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * These method is used to place over the mouse on desired item and click on element
+	 * @param SourceObj
+	 * @param targetObj
+	 * @return
+	 */
+
+	public boolean moveToElementAndClick(WebDriver driver, WebElement webElement){
+		try{
+			Actions act = new Actions(driver);
+			act.moveToElement(webElement).click().build().perform();
+		}catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+}

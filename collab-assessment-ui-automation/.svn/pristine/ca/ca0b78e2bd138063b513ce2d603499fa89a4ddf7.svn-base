@@ -1,0 +1,23 @@
+package com.cisco.collabNextGen.endtoend.tests;
+
+import org.testng.annotations.Test;
+
+import com.cisco.collabNextGen.common.BaseTestSuite;
+
+
+
+public class NewDemo extends BaseTestSuite {
+	
+	
+	
+	@Test
+	public void test1(){
+		
+		lauchTheApplication();
+		
+	}
+	
+	
+	
+
+}

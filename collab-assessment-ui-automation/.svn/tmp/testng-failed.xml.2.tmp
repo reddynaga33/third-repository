@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< .mine
+<suite guice-stage="DEVELOPMENT" name="Failed suite [END TO END]">
+  <test name="Sample report download(failed)">
+    <parameter name="Selenium.browser" value="Chrome"/>
+||||||| .r39122
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+>>>>>>> .r39246
+    <classes>
+<<<<<<< .mine
+      <class name="com.cisco.collabNextGen.reports.tests.DownloadReport">
+||||||| .r39122
+=======
+      <class name="com.cisco.collabNextGen.endtoend.tests.ExcelTest">
+>>>>>>> .r39246
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="setup"/>
+          <include name="setTestMethodName"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="setupClass"/>
+          <include name="test1"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+<<<<<<< .mine
+          <include name="adddeviceAndTestConnectivity"/>
+||||||| .r39122
+=======
+>>>>>>> .r39246
+        </methods>
+<<<<<<< .mine
+      </class> <!-- com.cisco.collabNextGen.reports.tests.DownloadReport -->
+||||||| .r39122
+=======
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.ExcelTest -->
+>>>>>>> .r39246
+    </classes>
+<<<<<<< .mine
+  </test> <!-- Sample report download(failed) -->
+</suite> <!-- Failed suite [END TO END] -->
+||||||| .r39122
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> .r39246

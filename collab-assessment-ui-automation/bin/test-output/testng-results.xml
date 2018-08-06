@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="END TO END" duration-ms="91855" started-at="2017-09-26T03:19:02Z" finished-at="2017-09-26T03:20:33Z">
+    <groups>
+    </groups>
+    <test name="Sample Test" duration-ms="34053" started-at="2017-09-26T03:19:02Z" finished-at="2017-09-26T03:19:36Z">
+      <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="beforeClass" is-config="true" duration-ms="5" started-at="2017-09-26T08:49:02Z" finished-at="2017-09-26T08:49:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="setup" is-config="true" duration-ms="16641" started-at="2017-09-26T08:49:02Z" finished-at="2017-09-26T08:49:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@600b0b7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="setupClass" is-config="true" duration-ms="6" started-at="2017-09-26T08:49:18Z" finished-at="2017-09-26T08:49:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2017-09-26T08:49:18Z" finished-at="2017-09-26T08:49:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.NewDemo.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="setTestMethodName" is-config="true" duration-ms="1" started-at="2017-09-26T08:49:18Z" finished-at="2017-09-26T08:49:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.NewDemo.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="test1" duration-ms="15203" started-at="2017-09-26T08:49:18Z" finished-at="2017-09-26T08:49:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="afterEachTest" is-config="true" duration-ms="521" started-at="2017-09-26T08:49:33Z" finished-at="2017-09-26T08:49:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]" name="afterMethod" is-config="true" duration-ms="1590" started-at="2017-09-26T08:49:34Z" finished-at="2017-09-26T08:49:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.NewDemo -->
+    </test> <!-- Sample Test -->
+    <test name="Sample Test1" duration-ms="36116" started-at="2017-09-26T03:19:36Z" finished-at="2017-09-26T03:20:12Z">
+      <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="beforeClass" is-config="true" duration-ms="1" started-at="2017-09-26T08:49:36Z" finished-at="2017-09-26T08:49:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="setup" is-config="true" duration-ms="11080" started-at="2017-09-26T08:49:36Z" finished-at="2017-09-26T08:49:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@443dbe42]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="setupClass" is-config="true" duration-ms="1" started-at="2017-09-26T08:49:47Z" finished-at="2017-09-26T08:49:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-09-26T08:49:47Z" finished-at="2017-09-26T08:49:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.NewDemo.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="setTestMethodName" is-config="true" duration-ms="0" started-at="2017-09-26T08:49:47Z" finished-at="2017-09-26T08:49:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.NewDemo.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="test1" duration-ms="24290" started-at="2017-09-26T08:49:47Z" finished-at="2017-09-26T08:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="afterEachTest" is-config="true" duration-ms="41" started-at="2017-09-26T08:50:11Z" finished-at="2017-09-26T08:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]" name="afterMethod" is-config="true" duration-ms="696" started-at="2017-09-26T08:50:11Z" finished-at="2017-09-26T08:50:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.NewDemo -->
+    </test> <!-- Sample Test1 -->
+    <test name="Sample Test2" duration-ms="21602" started-at="2017-09-26T03:20:12Z" finished-at="2017-09-26T03:20:33Z">
+      <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="beforeSuite" is-config="true" duration-ms="395" started-at="2017-09-26T08:49:01Z" finished-at="2017-09-26T08:49:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-09-26T08:50:12Z" finished-at="2017-09-26T08:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="setup" is-config="true" duration-ms="9875" started-at="2017-09-26T08:50:12Z" finished-at="2017-09-26T08:50:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@473b3b7a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="setupClass" is-config="true" duration-ms="2" started-at="2017-09-26T08:50:22Z" finished-at="2017-09-26T08:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-26T08:50:22Z" finished-at="2017-09-26T08:50:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.NewDemo.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="setTestMethodName" is-config="true" duration-ms="1" started-at="2017-09-26T08:50:22Z" finished-at="2017-09-26T08:50:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.NewDemo.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="test1" duration-ms="10549" started-at="2017-09-26T08:50:22Z" finished-at="2017-09-26T08:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="afterEachTest" is-config="true" duration-ms="134" started-at="2017-09-26T08:50:32Z" finished-at="2017-09-26T08:50:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]" name="afterMethod" is-config="true" duration-ms="1030" started-at="2017-09-26T08:50:32Z" finished-at="2017-09-26T08:50:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.NewDemo -->
+    </test> <!-- Sample Test2 -->
+  </suite> <!-- END TO END -->
+</testng-results>

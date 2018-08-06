@@ -1,0 +1,11 @@
+package com.cisco.collabNextGen.utilities;
+
+/**
+ * This class contains reusable methods of WebDriver.
+ * @author Giri
+ *
+ */
+public class WebDriverUtilities {
+	
+
+}

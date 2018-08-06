@@ -1,0 +1,52 @@
+package com.cisco.collabNextGen.pageobjects;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.cisco.collabNextGen.common.CommonReusables;
+import com.cisco.collabNextGen.utilities.LoggerLib;
+import com.cisco.collabNextGen.utilities.WebDriverUtilities;
+
+public class ReportsPage extends HomePage {
+
+	CommonReusables commonRU = new CommonReusables();
+	WebDriverUtilities webDriveLib= new WebDriverUtilities();
+	/**
+	 * Logger instance
+	 */
+	public Logger log = LoggerLib.writeLog(this.getClass().getName());
+
+
+
+	@FindBy(xpath = "//a[contains(text(),'Download')]")
+	private WebElement downloadLNK;
+
+	@FindBy(xpath = "//span[text()='All formats in compressed file']/preceding-sibling::span")
+	private WebElement allFormatPopupCkBx;
+
+	@FindBy(xpath = "//div[contains(@class,'quickdownloadModal')]//button[text()='Download']")
+	private WebElement downloadBtnPopup;
+
+	public boolean downloadReport(WebDriver driver,String analysisJobName) throws InterruptedException{
+		log.info("In the Reporting Page");
+		commonRU.switchToFrameSSUEMain(driver);
+		commonRU.filterColumn(driver, "Analysis Job", analysisJobName);
+		Thread.sleep(3000);
+		webDriveLib.moveToElementAndClick(driver, driver.findElement(By.xpath("//div[div[text()='"+analysisJobName+"']]/following-sibling::div//a[contains(text(),'Download')]")));
+		//driver.findElement(By.xpath("//div[div[text()='"+analysisJobName+"']]/following-sibling::div//a[contains(text(),'Download')]"));
+		//downloadLNK.click();
+		Thread.sleep(2000);
+		WebElement wb=driver.findElement(By.xpath("//span[text()='All formats in compressed file']/preceding-sibling::span"));
+		webDriveLib.moveToElementAndClick(driver, wb);
+		log.info("Download the report");
+		WebElement wb1=driver.findElement(By.xpath("//div[contains(@class,'quickdownloadModal')]//button[text()='Download']"));
+		wb1.click();
+		return true;
+
+	}
+
+
+}

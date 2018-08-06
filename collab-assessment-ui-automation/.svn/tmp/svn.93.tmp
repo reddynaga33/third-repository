@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="beforeSuite"/>
+          <include name="setup"/>
+          <include name="initializeCollection"/>
+          <include name="setTestMethodName"/>
+          <include name="startReportTest"/>
+          <include name="adddeviceAndTestConnectivity"/>
+          <include name="tearDown"/>
+          <include name="checkConnectivityStatus"/>
+          <include name="startAnalysisJobTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="setupClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.WorkFlowTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

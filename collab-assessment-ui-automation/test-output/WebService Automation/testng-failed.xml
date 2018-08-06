@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WebService Automation]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="setup"/>
+          <include name="setTestMethodName"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="setupClass"/>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.NewDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [WebService Automation] -->

@@ -1,0 +1,22 @@
+
+#-------------------------- COLLAB ENVIRONMENT -------------------------------------
+base=stage
+
+
+
+#-------------------------- STAGE ENVIRONMENT -------------------------------
+stage.url=http://10.127.102.186/collab/?ReturnUrl=http://10.127.102.186/collabhttp://10.127.102.186/ssue/smartconnection/#/
+stage.username=uname
+stage.password=password
+
+
+#-------------------------- DEV ENVIRONMENT -------------------------------
+dev.url=10.127.102.186/collab/#/
+dev.username=uname
+dev.password=password
+
+
+#-------------------------- AUTOMATION ENVIRONMENT -------------------------------
+automation.url=
+automation.username=uname
+automation.password=password

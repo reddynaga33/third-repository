@@ -1,0 +1,82 @@
+<table border='1'>
+<tr>
+<th>Class name</th>
+<th>Method name</th>
+<th>Groups</th>
+</tr><tr>
+<<<<<<< .mine
+<td>com.cisco.collabNextGen.endtoend.tests.WorkFlowTest</td>
+||||||| .r39122
+=======
+<td>com.cisco.collabNextGen.endtoend.tests.ExcelTest</td>
+>>>>>>> .r39246
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<<<<<<< .mine
+<td>checkConnectivityStatus</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>adddeviceAndTestConnectivity</td>
+||||||| .r39122
+=======
+<td>test1</td>
+>>>>>>> .r39246
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>initializeCollection</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>startAnalysisJobTest</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<<<<<<< .mine
+<td>startReportTest</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>loginTest</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>beforeClass</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+||||||| .r39122
+=======
+>>>>>>> .r39246
+<td>setupClass</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>beforeMethod</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>setTestMethodName</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>afterMethod</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+</table>

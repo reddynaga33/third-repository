@@ -1,0 +1,38 @@
+package com.cisco.collabNextGen.utilities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+
+/**
+ * This class contains reusable methods of WebDriver.
+ * @author Giri
+ *
+ */
+public class WebDriverUtilities {
+
+	public boolean selectByVisibleText(WebElement selectDropDown, String visibleText){
+		try{
+			Select select = new Select(selectDropDown);
+			select.selectByVisibleText(visibleText);
+
+		}catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	public boolean moveToElementAndClick(WebDriver driver, WebElement webElement){
+		try{
+			Actions act = new Actions(driver);
+			act.moveToElement(webElement).click().build().perform();
+		}catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+}

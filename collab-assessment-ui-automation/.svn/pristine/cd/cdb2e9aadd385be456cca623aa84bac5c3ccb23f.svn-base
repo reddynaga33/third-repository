@@ -1,0 +1,19 @@
+package com.cisco.collabNextGen.common;
+
+/**
+ * This Interface is used to set the constants globally which will be project specific
+ * 
+ * @author Giri
+ *
+ */
+public interface Constants {
+
+	String PROJECTPATH = System.getProperty("user.dir");
+	String TESTRESOURCES=PROJECTPATH + "/src/test/resources/";
+	String BROWSERDRIVERFOLDERLOCATION=PROJECTPATH + "/src/main/resources/browserdrivers/";
+	public static String LOGLEVEL="INFO";
+	String LOGFILENAME= "UIAutomation";
+	
+	
+	
+}

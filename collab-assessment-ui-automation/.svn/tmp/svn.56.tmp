@@ -1,0 +1,54 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>END TO END</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:49:33</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BaseTestSuite.afterEachTest(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">&lt;&lt;afterEachTest</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:50:11</td>   <td>37551</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BaseTestSuite.afterEachTest(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">&lt;&lt;afterEachTest</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:50:32</td>   <td>58752</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BaseTestSuite.afterEachTest(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&lt;&lt;afterEachTest</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:49:34</td>   <td>522</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:50:11</td>   <td>37591</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:50:32</td>   <td>58886</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:49:02</td>   <td>-31920</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">&gt;&gt;beforeClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:49:36</td>   <td>2175</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">&gt;&gt;beforeClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:50:12</td>   <td>38319</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&gt;&gt;beforeClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:49:18</td>   <td>-15217</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:49:47</td>   <td>13257</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:50:22</td>   <td>48197</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="657a99">  <td>17/09/26 08:49:01</td>   <td>-32323</td> <td title="&gt;&gt;ExtentTestNGReportBuilder.beforeSuite()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&gt;&gt;beforeSuite</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:49:18</td>   <td>-15207</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>main@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:49:47</td>   <td>13257</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:50:22</td>   <td>48198</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:49:02</td>   <td>-31914</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">&gt;&gt;setup</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:49:36</td>   <td>2175</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">&gt;&gt;setup</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:50:12</td>   <td>38320</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&gt;&gt;setup</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:49:18</td>   <td>-15273</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">&gt;&gt;setupClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:49:47</td>   <td>13255</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">&gt;&gt;setupClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="78c790">  <td>17/09/26 08:50:22</td>   <td>48194</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">&gt;&gt;setupClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="c7cbad">  <td>17/09/26 08:49:18</td>   <td>-15206</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@6ab778a]">test1</td> 
+  <td>main@812446698</td>   <td></td> </tr>
+<tr bgcolor="c7cbad">  <td>17/09/26 08:49:47</td>   <td>13257</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@2f54a33d]">test1</td> 
+  <td>test1@812446698</td>   <td></td> </tr>
+<tr bgcolor="c7cbad">  <td>17/09/26 08:50:22</td>   <td>48198</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="NewDemo.test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@4f67eb2a]">test1</td> 
+  <td>test1@812446698</td>   <td></td> </tr>
+</table>

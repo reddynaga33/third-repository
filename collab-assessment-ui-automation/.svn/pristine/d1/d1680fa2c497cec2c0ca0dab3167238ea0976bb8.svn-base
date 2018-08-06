@@ -1,0 +1,132 @@
+package com.cisco.collabNextGen.pageobjects;
+
+import java.util.Random;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.cisco.collabNextGen.common.CommonReusables;
+import com.cisco.collabNextGen.utilities.LoggerLib;
+import com.cisco.collabNextGen.utilities.WebDriverUtilities;
+
+public class DataAnalysisPage  extends HomePage{
+	CommonReusables commonRU = new CommonReusables();
+	WebDriverUtilities webDriveLib= new WebDriverUtilities();
+	public String defaultAnalysisJob="";
+	/**
+	 * Logger instance
+	 */
+	public Logger log = LoggerLib.writeLog(this.getClass().getName());
+	
+	@FindBy(xpath="//a[@class='analysis_home_select ng-scope']")
+	private WebElement selectCollectionJobsWE;
+	
+	@FindBy(xpath="//input[@id='text2']")
+	private WebElement analysisJobNameEdt;
+	
+	@FindBy(xpath="//select[@name='ruleProfile']")
+	private WebElement ruleProfileDD;
+	
+	@FindBy(xpath="//button[text()='Start Analysis']")
+	private WebElement startAnalysisBtn;
+
+
+	@FindBy(xpath="//button[text()='Select']")
+	private WebElement selectBtnPopup;
+	
+	@FindBy(xpath="//span[contains(@ng-if,'sameTaskName')]")
+	private WebElement alreadyExistsMsg;
+	//span[contains(@ng-if,'sameTaskName')]
+	
+	public DataAnalysisPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public boolean startAnalysis(WebDriver driver,String collectionJob) throws InterruptedException{
+		//String collectionJob="CUCM_9_1_101_task_1";
+		String analysisJob="Testing123";
+		String CUCMAUDITTYPE="CUCM Config";
+		defaultAnalysisJob=analysisJob;
+		try {
+			navigateToDataAnalysis();
+			commonRU.switchToFrameSSUEMain(driver);
+			log.info("Select the Collection Jobs");
+			selectCollectionJobsWE.click();
+			log.info("Collection Jobs Filter");
+			commonRU.filterColumn(driver, "Collection Jobs", collectionJob);
+			log.info("Selecting the Collection "+collectionJob);
+			driver.findElement(By.xpath("//div[text()='"+collectionJob+"']")).click();
+			log.info("Clicking the select button");
+			selectBtnPopup.click();
+			log.info("Input Analysis Job Name");
+			analysisJobNameEdt.clear();
+			analysisJobNameEdt.sendKeys(analysisJob);
+			//defaultAnalysisJob=analysisJobNameEdt.getAttribute("value");
+			log.info("Select Rule Profile");
+			webDriveLib.selectByVisibleText(ruleProfileDD, CUCMAUDITTYPE);
+			Thread.sleep(2000);
+			log.info("Start Analysis");
+			startAnalysisBtn.click();
+			Thread.sleep(1500);
+			try{while(alreadyExistsMsg.isDisplayed()){
+				log.info("Analysis Job Name already exists");
+				Random random = new Random();
+				random.nextInt();
+				analysisJobNameEdt.sendKeys(random.nextInt()+"");
+				defaultAnalysisJob=analysisJobNameEdt.getAttribute("value");
+				startAnalysisBtn.click();
+			}}catch (NoSuchElementException e) {
+				// TODO: handle exception
+			}
+			log.info("Analysis has been started Sucesfully");
+		} catch (Exception e) {
+			
+			log.error("Error in Performing Start Analysis");
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;
+	}
+	
+/*	public boolean startAnalysis(WebDriver driver, String analysisJobName) throws InterruptedException{
+		String collectionJob="CUCM_9_1_101_task_1";
+		String analysisJob=analysisJobName;
+		String CUCMAUDITTYPE="CUCM Config";
+		try {
+			commonRU.switchToFrameSSUEMain(driver);
+			log.info("Select the Collection Jobs");
+			selectCollectionJobsWE.click();
+			log.info("Collection Jobs Filter");
+			commonRU.filterColumn(driver, "Collection Jobs", collectionJob);
+			log.info("Selecting the Collection "+collectionJob);
+			driver.findElement(By.xpath("//div[text()='"+collectionJob+"']")).click();
+			log.info("Clicking the select button");
+			selectBtnPopup.click();
+			log.info("Input Analysis Job Name");
+			analysisJobNameEdt.clear();
+			analysisJobNameEdt.sendKeys(analysisJob);
+			log.info("Select Rule Profile");
+			webDriveLib.selectByVisibleText(ruleProfileDD, CUCMAUDITTYPE);
+			Thread.sleep(2000);
+			log.info("Start Analysis");
+			startAnalysisBtn.click();
+			log.info("Analysis has been started Sucesfully");
+		} catch (Exception e) {
+			
+			log.error("Error in Performing Start Analysis");
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;
+	}
+*/
+	
+}

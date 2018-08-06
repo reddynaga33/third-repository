@@ -1,0 +1,95 @@
+package com.cisco.collabNextGen.pageobjects;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.cisco.collabNextGen.common.DriverManager;
+
+public class ScheduleCollectionPage {
+	public String deafultCollectionjob="";
+	
+@FindBy(name = "collectionType")
+private WebElement collectionType;
+
+@FindBy(name="selectLink")
+private WebElement selectLink;
+
+@FindBy(name = "collectionTaskName")
+private WebElement collectionTaskName;
+
+@FindBy(xpath = "//div[text()='ADVANCED DATA COLLECTION']")
+private WebElement advancedOption;
+
+@FindBy(xpath="//div[text()='Cli Commands']")
+private WebElement cliCommands;
+
+@FindBy(xpath = "//*[@id='sourceList']/li[text()='show-hardware']")
+private WebElement showHardware;
+
+@FindBy(xpath=".//*[@id='style-4']/div/div/img")
+private WebElement excludedCommands;
+
+@FindBy(xpath="//button[text()='Preview']")
+private WebElement previewBtn;
+
+@FindBy(xpath="//iframe[@class='ssueContentIframe ng-scope']")
+private WebElement iframe3;
+
+@FindBy(xpath="//button[text()='Initiate Collection']")
+private WebElement initCollection;
+
+@FindBy(name="collectionTaskName")
+private WebElement collectionJobName;
+
+public ScheduleCollectionPage(WebDriver driver)
+{
+	PageFactory.initElements(driver, this);
+}
+
+
+public String initiateCollection() throws InterruptedException
+{
+	switchToFrameSSUEMain(DriverManager.getTheDriverInstance());
+	Thread.sleep(2000);
+	deafultCollectionjob=collectionJobName.getAttribute("value");
+	Thread.sleep(1000);
+	advancedOption.click();
+	
+	Thread.sleep(3000);
+	dragAndDrop(DriverManager.getTheDriverInstance());
+	Thread.sleep(2000);
+	previewBtn.click();
+	Thread.sleep(5000);
+	initCollection.click();
+	return deafultCollectionjob;
+	
+}
+
+
+public void switchToFrameSSUEMain(WebDriver driver){
+	driver.switchTo().defaultContent();
+	driver.switchTo().frame(iframe3);
+	}
+
+
+public void dragAndDrop(WebDriver driver) throws InterruptedException
+{
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	jse.executeScript("window.scrollBy(0,250)", "");
+	Thread.sleep(2000);
+	cliCommands.click();
+	Thread.sleep(2000);
+	Actions builder = new Actions(driver);
+	Action dragAndDrop = builder.clickAndHold(showHardware)
+	   .moveToElement(excludedCommands)
+	   .release(excludedCommands)
+	   .build();
+	Thread.sleep(2000);
+	dragAndDrop.perform();
+}
+}

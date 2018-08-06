@@ -1,0 +1,2 @@
+env.propfile=testdata.properties
+excel.testdata=TestDataExcel.xlsx

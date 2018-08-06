@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="END TO END" verbose="1">
+	<test name="Sample report download">
+		<parameter name="Selenium.browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.cisco.collabNextGen.reports.tests.DownloadReport"></class>
+		</classes>
+	</test>
+</suite>

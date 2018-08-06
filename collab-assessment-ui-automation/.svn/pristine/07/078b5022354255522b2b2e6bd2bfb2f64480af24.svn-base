@@ -1,0 +1,5 @@
+package com.cisco.collabNextGen.pageobjects;
+
+public class ReportingPage {
+
+}

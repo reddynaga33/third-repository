@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="END TO END" duration-ms="2450308" started-at="2017-10-25T12:21:55Z" finished-at="2017-10-25T13:02:45Z">
+    <groups>
+    </groups>
+    <test name="Sample Test" duration-ms="2450308" started-at="2017-10-25T12:21:55Z" finished-at="2017-10-25T13:02:45Z">
+      <class name="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeSuite" is-config="true" duration-ms="339" started-at="2017-10-25T17:51:41Z" finished-at="2017-10-25T17:51:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setup" is-config="true" duration-ms="13915" started-at="2017-10-25T17:51:41Z" depends-on-methods="com.cisco.collabNextGen.utilities.extentreports.ExtentTestNGReportBuilder.beforeSuite" finished-at="2017-10-25T17:51:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3ba6707e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeClass" is-config="true" duration-ms="51" started-at="2017-10-25T17:51:55Z" finished-at="2017-10-25T17:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setupClass" is-config="true" duration-ms="7" started-at="2017-10-25T17:51:55Z" finished-at="2017-10-25T17:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeMethod" is-config="true" duration-ms="26" started-at="2017-10-25T17:51:55Z" finished-at="2017-10-25T17:51:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.loginTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setTestMethodName" is-config="true" duration-ms="1" started-at="2017-10-25T17:51:55Z" finished-at="2017-10-25T17:51:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.loginTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="loginTest" duration-ms="15142" started-at="2017-10-25T17:51:55Z" finished-at="2017-10-25T17:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="afterMethod" is-config="true" duration-ms="1719" started-at="2017-10-25T17:52:10Z" finished-at="2017-10-25T17:52:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=WorkFlowTest.loginTest()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-25T17:52:12Z" finished-at="2017-10-25T17:52:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.adddeviceAndTestConnectivity() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setTestMethodName" is-config="true" duration-ms="1" started-at="2017-10-25T17:52:12Z" finished-at="2017-10-25T17:52:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.adddeviceAndTestConnectivity() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="adddeviceAndTestConnectivity()[pri:1, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="adddeviceAndTestConnectivity" duration-ms="66599" started-at="2017-10-25T17:52:12Z" finished-at="2017-10-25T17:53:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adddeviceAndTestConnectivity -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="afterMethod" is-config="true" duration-ms="1684" started-at="2017-10-25T17:53:19Z" finished-at="2017-10-25T17:53:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adddeviceAndTestConnectivity status=SUCCESS method=WorkFlowTest.adddeviceAndTestConnectivity()[pri:1, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-25T17:53:20Z" finished-at="2017-10-25T17:53:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkConnectivityStatus()[pri:2, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="checkConnectivityStatus" duration-ms="38149" started-at="2017-10-25T17:53:20Z" finished-at="2017-10-25T17:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkConnectivityStatus -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setTestMethodName" is-config="true" duration-ms="0" started-at="2017-10-25T17:53:20Z" finished-at="2017-10-25T17:53:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="afterMethod" is-config="true" duration-ms="895" started-at="2017-10-25T17:53:58Z" finished-at="2017-10-25T17:53:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkConnectivityStatus status=SUCCESS method=WorkFlowTest.checkConnectivityStatus()[pri:2, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setTestMethodName" is-config="true" duration-ms="1" started-at="2017-10-25T17:53:59Z" finished-at="2017-10-25T17:53:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.initializeCollection() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-25T17:53:59Z" finished-at="2017-10-25T17:53:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.initializeCollection() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="initializeCollection()[pri:3, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="initializeCollection" duration-ms="2220970" started-at="2017-10-25T17:53:59Z" depends-on-methods="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus" finished-at="2017-10-25T18:31:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeCollection -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="afterMethod" is-config="true" duration-ms="1373" started-at="2017-10-25T18:31:00Z" finished-at="2017-10-25T18:31:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=initializeCollection status=SUCCESS method=WorkFlowTest.initializeCollection()[pri:3, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-25T18:31:02Z" finished-at="2017-10-25T18:31:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.startAnalysisJobTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setTestMethodName" is-config="true" duration-ms="1" started-at="2017-10-25T18:31:02Z" finished-at="2017-10-25T18:31:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.startAnalysisJobTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="startAnalysisJobTest()[pri:4, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="startAnalysisJobTest" duration-ms="78418" started-at="2017-10-25T18:31:02Z" depends-on-methods="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.initializeCollection" finished-at="2017-10-25T18:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAnalysisJobTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="afterMethod" is-config="true" duration-ms="794" started-at="2017-10-25T18:32:20Z" finished-at="2017-10-25T18:32:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=startAnalysisJobTest status=SUCCESS method=WorkFlowTest.startAnalysisJobTest()[pri:4, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-25T18:32:21Z" finished-at="2017-10-25T18:32:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.startReportTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="setTestMethodName" is-config="true" duration-ms="0" started-at="2017-10-25T18:32:21Z" finished-at="2017-10-25T18:32:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.startReportTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="startReportTest()[pri:5, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="startReportTest" duration-ms="22602" started-at="2017-10-25T18:32:21Z" depends-on-methods="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.startAnalysisJobTest" finished-at="2017-10-25T18:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReportTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="afterMethod" is-config="true" duration-ms="1547" started-at="2017-10-25T18:32:44Z" finished-at="2017-10-25T18:32:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=startReportTest status=SUCCESS method=WorkFlowTest.startReportTest()[pri:5, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]" name="tearDown" is-config="true" duration-ms="5497" started-at="2017-10-25T18:32:46Z" finished-at="2017-10-25T18:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.WorkFlowTest -->
+    </test> <!-- Sample Test -->
+  </suite> <!-- END TO END -->
+</testng-results>

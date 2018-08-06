@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< .mine
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+||||||| .r38649
+=======
+<testng-results skipped="3" failed="1" ignored="0" total="6" passed="2">
+>>>>>>> .r39008
+  <reporter-output>
+  </reporter-output>
+<<<<<<< .mine
+  <suite name="Default suite" duration-ms="54" started-at="2017-10-13T11:02:30Z" finished-at="2017-10-13T11:02:30Z">
+||||||| .r38649
+=======
+  <suite name="END TO END" duration-ms="119108" started-at="2017-10-24T09:30:28Z" finished-at="2017-10-24T09:32:27Z">
+>>>>>>> .r39008
+    <groups>
+    </groups>
+<<<<<<< .mine
+    <test name="Default test" duration-ms="54" started-at="2017-10-13T11:02:30Z" finished-at="2017-10-13T11:02:30Z">
+      <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@10aa41f2]" name="beforeSuite" is-config="true" duration-ms="203" started-at="2017-10-13T16:32:30Z" finished-at="2017-10-13T16:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@10aa41f2]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-10-13T16:32:30Z" finished-at="2017-10-13T16:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@10aa41f2]" name="setup" is-config="true" duration-ms="8" started-at="2017-10-13T16:32:30Z" finished-at="2017-10-13T16:32:30Z">
+||||||| .r38649
+=======
+    <test name="Sample Test" duration-ms="119108" started-at="2017-10-24T09:30:28Z" finished-at="2017-10-24T09:32:27Z">
+      <class name="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="beforeSuite" is-config="true" duration-ms="125" started-at="2017-10-24T15:00:23Z" finished-at="2017-10-24T15:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="setup" is-config="true" duration-ms="4096" started-at="2017-10-24T15:00:24Z" depends-on-methods="com.cisco.collabNextGen.utilities.extentreports.ExtentTestNGReportBuilder.beforeSuite" finished-at="2017-10-24T15:00:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@42deb43a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="beforeClass" is-config="true" duration-ms="7" started-at="2017-10-24T15:00:28Z" finished-at="2017-10-24T15:00:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="setupClass" is-config="true" duration-ms="2" started-at="2017-10-24T15:00:28Z" finished-at="2017-10-24T15:00:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2017-10-24T15:00:28Z" finished-at="2017-10-24T15:00:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.loginTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="setTestMethodName" is-config="true" duration-ms="1" started-at="2017-10-24T15:00:28Z" finished-at="2017-10-24T15:00:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.loginTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="loginTest" duration-ms="8401" started-at="2017-10-24T15:00:28Z" finished-at="2017-10-24T15:00:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="afterMethod" is-config="true" duration-ms="565" started-at="2017-10-24T15:00:36Z" finished-at="2017-10-24T15:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=WorkFlowTest.loginTest()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="adddeviceAndTestConnectivity()[pri:1, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="adddeviceAndTestConnectivity" duration-ms="59212" started-at="2017-10-24T15:00:37Z" finished-at="2017-10-24T15:01:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adddeviceAndTestConnectivity -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="setTestMethodName" is-config="true" duration-ms="0" started-at="2017-10-24T15:00:37Z" finished-at="2017-10-24T15:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.adddeviceAndTestConnectivity() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-24T15:00:37Z" finished-at="2017-10-24T15:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.adddeviceAndTestConnectivity() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="afterMethod" is-config="true" duration-ms="101" started-at="2017-10-24T15:01:36Z" finished-at="2017-10-24T15:01:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adddeviceAndTestConnectivity status=SUCCESS method=WorkFlowTest.adddeviceAndTestConnectivity()[pri:1, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="checkConnectivityStatus()[pri:2, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="checkConnectivityStatus" duration-ms="50627" started-at="2017-10-24T15:01:36Z" finished-at="2017-10-24T15:02:27Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[div[text()='CUCM_Device96']]/following-sibling::div//a[text()='Start Collection']"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ANAGARJA-G2C70', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\anagarja\AppData\Local\Temp\scoped_dir2840_31358}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e2c9d04695db317a47db3f0594b6fe88
+*** Element info: {Using=xpath, value=//div[div[text()='CUCM_Device96']]/following-sibling::div//a[text()='Start Collection']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[div[text()='CUCM_Device96']]/following-sibling::div//a[text()='Start Collection']"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ANAGARJA-G2C70', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\anagarja\AppData\Local\Temp\scoped_dir2840_31358}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e2c9d04695db317a47db3f0594b6fe88
+*** Element info: {Using=xpath, value=//div[div[text()='CUCM_Device96']]/following-sibling::div//a[text()='Start Collection']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.cisco.collabNextGen.pageobjects.ConnectivityPage.startCollection(ConnectivityPage.java:77)
+	at com.cisco.collabNextGen.pageobjects.ConnectivityPage.navigateToScheduleCollection(ConnectivityPage.java:52)
+	at com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus(WorkFlowTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkConnectivityStatus -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-24T15:01:36Z" finished-at="2017-10-24T15:01:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="setTestMethodName" is-config="true" duration-ms="0" started-at="2017-10-24T15:01:36Z" finished-at="2017-10-24T15:01:36Z">
+>>>>>>> .r39008
+          <params>
+            <param index="0">
+              <value>
+<<<<<<< .mine
+                <![CDATA[org.testng.TestRunner@1ed4ae0f]]>
+||||||| .r38649
+=======
+                <![CDATA[public void com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus() throws java.lang.InterruptedException]]>
+>>>>>>> .r39008
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.cisco.collabNextGen.common.DriverManager.getDriverInstance(DriverManager.java:28)
+	at com.cisco.collabNextGen.common.BaseTestSuite.setup(BaseTestSuite.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+<<<<<<< .mine
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@10aa41f2]" name="setupClass" is-config="true" duration-ms="0" started-at="2017-10-13T16:32:30Z" finished-at="2017-10-13T16:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@10aa41f2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-13T16:32:30Z" finished-at="2017-10-13T16:32:30Z">
+||||||| .r38649
+=======
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="afterMethod" is-config="true" duration-ms="136" started-at="2017-10-24T15:02:27Z" finished-at="2017-10-24T15:02:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkConnectivityStatus status=FAILURE method=WorkFlowTest.checkConnectivityStatus()[pri:2, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> .r39008
+          <reporter-output>
+          </reporter-output>
+<<<<<<< .mine
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@10aa41f2]" name="setTestMethodName" is-config="true" duration-ms="0" started-at="2017-10-13T16:32:30Z" finished-at="2017-10-13T16:32:30Z">
+||||||| .r38649
+=======
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="startReportTest()[pri:5, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="startReportTest" duration-ms="0" started-at="2017-10-24T15:02:27Z" depends-on-methods="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.startAnalysisJobTest" finished-at="2017-10-24T15:02:27Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WorkFlowTest.startReportTest()[pri:5, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WorkFlowTest.startReportTest()[pri:5, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+>>>>>>> .r39008
+          <reporter-output>
+          </reporter-output>
+<<<<<<< .mine
+        </test-method> <!-- setTestMethodName -->
+        <test-method status="SKIP" signature="test1()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.NewDemo@10aa41f2]" name="test1" duration-ms="0" started-at="2017-10-13T16:32:30Z" finished-at="2017-10-13T16:32:30Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.cisco.collabNextGen.common.DriverManager.getDriverInstance(DriverManager.java:28)
+	at com.cisco.collabNextGen.common.BaseTestSuite.setup(BaseTestSuite.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+||||||| .r38649
+=======
+        </test-method> <!-- startReportTest -->
+        <test-method status="SKIP" signature="initializeCollection()[pri:3, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="initializeCollection" duration-ms="0" started-at="2017-10-24T15:02:27Z" depends-on-methods="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.checkConnectivityStatus" finished-at="2017-10-24T15:02:27Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WorkFlowTest.initializeCollection()[pri:3, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WorkFlowTest.initializeCollection()[pri:3, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+>>>>>>> .r39008
+          <reporter-output>
+          </reporter-output>
+<<<<<<< .mine
+        </test-method> <!-- test1 -->
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.NewDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+||||||| .r38649
+=======
+        </test-method> <!-- initializeCollection -->
+        <test-method status="SKIP" signature="startAnalysisJobTest()[pri:4, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="startAnalysisJobTest" duration-ms="0" started-at="2017-10-24T15:02:27Z" depends-on-methods="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest.initializeCollection" finished-at="2017-10-24T15:02:27Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WorkFlowTest.startAnalysisJobTest()[pri:4, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WorkFlowTest.startAnalysisJobTest()[pri:4, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAnalysisJobTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@6ab778a]" name="tearDown" is-config="true" duration-ms="898" started-at="2017-10-24T15:02:27Z" finished-at="2017-10-24T15:02:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.WorkFlowTest -->
+    </test> <!-- Sample Test -->
+  </suite> <!-- END TO END -->
+>>>>>>> .r39008
+</testng-results>

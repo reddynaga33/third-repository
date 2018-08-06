@@ -1,0 +1,178 @@
+package com.cisco.collabNextGen.common;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.aventstack.extentreports.model.Log;
+import com.cisco.collabNextGen.utilities.LoggerLib;
+import com.cisco.collabNextGen.utilities.WebDriverUtilities;
+
+public class CommonReusables {
+
+	/**
+	 * Logger instance
+	 */
+	public Logger log = LoggerLib.writeLog(this.getClass().getName());
+	WebDriverUtilities webDriveLib= new WebDriverUtilities();
+	
+	/**
+	 *This method is used to switch to the frame to SSUEMAIN 
+	 * @param driver 
+	 */
+	public boolean switchToFrameSSUEMain(WebDriver driver){
+		try{
+			//log.info("Switching the frame to SSUECONTENT IFRAME");
+			driver.switchTo().defaultContent();
+			driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='ssueContentIframe ng-scope']")));
+			//log.info("Sucessfully switched to the frame: SSUECONTENT IFRAME");
+		}catch (Exception e) {
+			
+			e.printStackTrace();
+			log.error("Unable to switch to frame");
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * 
+	 * @param driver
+	 */
+	public boolean switchToFrameSSUEPopUP(WebDriver driver){
+		try{
+			//log.info("Switching the frame to NGSCOPE SSUE POPUP IFRAME");
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='ng-scope']")));
+		//log.info("Sucessfully switched to the frame: NGSCOPE SSUE POPUP IFRAME");
+		}catch (Exception e) {
+			e.printStackTrace();
+			log.error("Unable to switch to frame");
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * 
+	 * @param driver
+	 */
+	public boolean switchTodefaultFrame(WebDriver driver){
+		try{
+		//log.info("Switching to the default IFRAME");
+		driver.switchTo().defaultContent();
+		//log.info("Sucessfully switched to the frame: NGSCOPE SSUE POPUP IFRAME");
+		}catch (Exception e) {
+			e.printStackTrace();
+			log.error("Unable to switch to frame");
+			return false;
+			
+		}
+		return true;
+	}
+
+	/**
+	 * This method is used to filter the column in the grid
+	 * @param driver
+	 * @param coloumnName
+	 * @param filter
+	 * @throws InterruptedException 
+	 */
+	public void filterColumn(WebDriver driver, String coloumnName, String filter) throws InterruptedException{
+		log.info("Filtering the table with the column- "+coloumnName+" with the value - "+ filter);
+		switchToFrameSSUEMain(driver);
+		driver.findElement(By.xpath("//span[text()='"+coloumnName+"']/ancestor::div[@role='columnheader']//input[@aria-label='Filter for column']")).sendKeys(filter);
+		Thread.sleep(1000);
+	}
+	
+	/**
+	 * This returns the Status of the Job/Device Connectivity
+	 * 
+	 * @param driver
+	 * @param attribName
+	 * @return
+	 * @throws InterruptedException
+	 */
+	public  String verifyStatus(WebDriver driver, String pageName, String attribName) throws InterruptedException{
+
+		String status = "",actStatus = null;
+		int time=0;
+		//String pageName= driver.findElement(By.xpath("//div[@class='ssueContainerTitle']/span")).getText();
+		if(pageName.contains("Device Connectivity")){
+		while(!status.equals("Completed")){
+
+			switchToFrameSSUEMain(driver);
+			status=driver.findElement(By.xpath("//div[text()='"+attribName+"']/ancestor::div[contains(@id,'uiGrid')]/following-sibling::div[contains(@class,'connectivity')]")).getAttribute("class").trim();
+			actStatus=status.split(" ")[2].trim();
+			if(actStatus.equalsIgnoreCase("failure")){
+				status="Failed";
+				return actStatus;
+			}
+			if(status.contains("passed")){
+				status="Completed";
+			}
+			
+			if(status.contains("connectivitynotdone")){
+				status="connectivitynotdone";
+				return actStatus;
+			}
+
+			driver.switchTo().defaultContent();
+			WebElement wb=driver.findElement(By.xpath("//div[@class='AtlanticIcon_module_refresh']"));
+			webDriveLib.moveToElementAndClick(driver,wb);
+			Thread.sleep(1000);
+			time++;
+		}
+		log.info("Job took approx "+time+" seconds");
+		}
+		if(pageName.contains("Analysis Jobs")){
+			
+			while(!status.equals("Completed")){
+
+				switchToFrameSSUEMain(driver);
+				status=driver.findElement(By.xpath("//div[text()='"+attribName+"']/ancestor::div[contains(@id,'uiGrid')]/following-sibling::div[contains(@class,'connectivity')]")).getAttribute("class").trim();
+				actStatus=status.split(" ")[2].trim();
+				if(status.contains("completed")){
+					status="Completed";
+				}
+				
+
+				driver.switchTo().defaultContent();
+				WebElement wb=driver.findElement(By.xpath("//div[@class='AtlanticIcon_module_refresh']"));
+				webDriveLib.moveToElementAndClick(driver,wb);
+				Thread.sleep(1000);
+				time++;
+			}
+			log.info("Approx. time taken for the Job to tbe completed is around "+ time+" sec(s)");
+		}
+	
+	if(pageName.contains("Collection Jobs")){
+		
+		while(!status.equals("Completed")){
+
+			switchToFrameSSUEMain(driver);
+			status=driver.findElement(By.xpath("//a[text()='"+attribName+"']/ancestor::div[contains(@id,'uiGrid')]/following-sibling::div[contains(@class,'connectivity')]")).getAttribute("class").trim();
+			actStatus=status.split(" ")[2].trim();
+			if(status.contains("completed")){
+				status="Completed";
+			}
+			if(status.contains("completedwitherror")){
+				status="Completed";
+			}
+			if(actStatus.equalsIgnoreCase("failure")){
+				status="Failed";
+			}
+			driver.switchTo().defaultContent();
+			WebElement wb=driver.findElement(By.xpath("//div[@class='AtlanticIcon_module_refresh']"));
+			webDriveLib.moveToElementAndClick(driver,wb);
+			Thread.sleep(1000);
+			time++;
+		}	
+	}
+	
+	return actStatus;
+}
+	
+
+}

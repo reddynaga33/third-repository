@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="END TO END">
+	
+	<test name="Sample Test">
+		<parameter name="Selenium.browser" value="Chrome"></parameter>
+        <classes>
+            <class name="com.cisco.collabNextGen.collector.tests.AddDevices" ></class>  
+        </classes>
+    </test>
+   
+</suite>

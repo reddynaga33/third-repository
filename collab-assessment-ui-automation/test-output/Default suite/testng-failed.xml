@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+<<<<<<< .mine
+      <class name="com.cisco.collabNextGen.endtoend.tests.WorkFlowTest">
+||||||| .r39122
+=======
+      <class name="com.cisco.collabNextGen.endtoend.tests.ExcelTest">
+>>>>>>> .r39246
+        <methods>
+          <include name="loginTest"/>
+          <include name="beforeSuite"/>
+          <include name="setup"/>
+          <include name="initializeCollection"/>
+          <include name="setTestMethodName"/>
+<<<<<<< .mine
+          <include name="startReportTest"/>
+          <include name="adddeviceAndTestConnectivity"/>
+||||||| .r39122
+=======
+>>>>>>> .r39246
+          <include name="tearDown"/>
+          <include name="checkConnectivityStatus"/>
+          <include name="startAnalysisJobTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="setupClass"/>
+          <include name="test1"/>
+          <include name="beforeMethod"/>
+<<<<<<< .mine
+||||||| .r39122
+=======
+          <include name="tearDown"/>
+>>>>>>> .r39246
+        </methods>
+<<<<<<< .mine
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.WorkFlowTest -->
+||||||| .r39122
+=======
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.ExcelTest -->
+>>>>>>> .r39246
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

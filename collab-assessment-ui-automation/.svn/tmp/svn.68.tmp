@@ -1,0 +1,184 @@
+package com.cisco.collabNextGen.common;
+
+import java.io.IOException
+;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
+import com.cisco.collabNextGen.utilities.ExcelUtilities;
+import com.cisco.collabNextGen.utilities.LoggerLib;
+import com.cisco.collabNextGen.utilities.PropertiesUtiles;
+import com.cisco.collabNextGen.utilities.extentreports.ExtentTestNGReportBuilder;
+
+
+/**
+ * This class is the base class of all the test classes where different kind of initialization is done
+ * Initialization are done for excel test data, method name
+ * 
+ * This class extends ExtentTestNGReportBuilder which is responsible for report generation
+ * 
+ * 
+ * @author Giri
+ *
+ */
+public class BaseTestSuite extends ExtentTestNGReportBuilder{
+
+	public PropertiesUtiles properties = new PropertiesUtiles();
+	public Random random = new Random();
+	public ExcelUtilities excel= new ExcelUtilities(Constants.TESTRESOURCES+"TestDataExcel.xlsx");
+	private WebDriver driver;
+	
+	/** Stores the name of the current test method. */
+	private static String testMethodName;
+	/**
+	 * Logger instance
+	 */
+	public Logger log = LoggerLib.writeLog(this.getClass().getName());
+	
+	DriverManager dManager= new DriverManager();	
+		
+	@BeforeClass(alwaysRun = true)    
+	public void setup(ITestContext context) throws Exception{
+		
+		DriverManager dManager= new DriverManager();
+		String bro= context.getCurrentXmlTest().getParameter("Selenium.browser");
+		log.info("Browser Instance has been created");
+		driver=dManager.getDriverInstance(bro);
+		
+		if(driver instanceof FirefoxDriver){
+			log.info("Firefox Instance Instance has been created");
+		}else if(driver instanceof ChromeDriver){
+			log.info("Chrome Instance has been created");
+		}else if(driver instanceof InternetExplorerDriver){
+			log.info("IE Instance has been created");
+		}
+		driver.manage().window().maximize();
+		log.info("Maximizing the Window");
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
+	}
+	
+	/**
+	 * This method is used to navigate to the application and login to the app
+	 * returns
+	 */
+	public void lauchTheApplicationAndLogin(){
+		try{
+		HashMap<String, String> envDetails= getEnvironmentDetails();
+		String url= envDetails.get("url");
+		driver.get(url);
+		
+		//Need to implement the UNAME and PASSWORD details
+		
+		}catch (Exception e) {
+			e.printStackTrace();
+			log.error("Error in login to the application");
+		}
+	}
+	
+	/**
+	 * This method is used to navigate to the application
+	 * returns
+	 */
+	public void lauchTheApplication(){
+		try{
+		HashMap<String, String> envDetails= getEnvironmentDetails();
+		String url= envDetails.get("url");
+		driver.get(url);
+		
+		//Need to implement the UNAME and PASSWORD details
+		
+		}catch (Exception e) {
+			e.printStackTrace();
+			log.error("Error in login to the application");
+		}
+	}
+	
+	
+	
+	/**
+	 * This method is used to get the environment details of the ENVIRONMENT section which is mentioned as base
+	 * This returns a HashMap with both the key and value as String.
+	 * @return  HashMap   This returns HashMap with environment details as key and their corresponding values.
+	 */
+	public HashMap<String,String> getEnvironmentDetails(){
+		
+		properties.loadProperties(Constants.TESTRESOURCES+"testdata.properties");
+		
+		String reference=properties.getProperty("base");
+		String url=properties.getProperty(reference+".url");
+		String userName=properties.getProperty(reference+".username");
+		String password=properties.getProperty(reference+".password");
+		HashMap<String, String> envDetails = new HashMap<>();
+		envDetails.put("url", url);
+		envDetails.put("username", userName);
+		envDetails.put("password", password);
+		return envDetails;
+		
+	}
+	
+	
+	/**
+	 * This method is a overloaded method which is used to get the environment details of the ENVIRONMENT section
+	 * which is mentioned as base.
+	 * This returns a HashMap with both the key and value as String.
+	 * 
+	 * @param   baseInTestDataProp
+	 * @return  HashMap This returns HashMap with environment details as key and their corresponding values.
+	 */
+	public HashMap<String,String> getEnvironmentDetails(String baseInTestDataProp){
+		
+		properties.loadProperties(Constants.TESTRESOURCES+"testdata.properties");
+		
+		String reference=properties.getProperty(baseInTestDataProp);
+		String url=properties.getProperty(reference+".url");
+		String userName=properties.getProperty(reference+".username");
+		String password=properties.getProperty(reference+".password");
+		HashMap<String, String> envDetails = new HashMap<>();
+		envDetails.put("url", url);
+		envDetails.put("username", userName);
+		envDetails.put("password", password);
+		return envDetails;
+		
+	}
+	
+	public WebDriver getDriverInstance(){
+		return driver;
+	}
+	
+	
+	@BeforeClass
+	public void setupClass() {
+		String envpropFile = PropertiesUtiles.loadProperties(Constants.TESTRESOURCES+"config.properties")
+				.getProperty("env.propfile");
+		PropertiesUtiles.loadProperties(Constants.TESTRESOURCES+envpropFile);
+	}
+
+	
+	@BeforeMethod
+	public void setTestMethodName(Method method) {
+		testMethodName = method.getName();
+
+		Thread.currentThread().setName(testMethodName);
+	}
+	
+	@AfterMethod
+	public void afterEachTest(ITestResult result) throws IOException {
+		driver.close();
+	}
+		
+	
+}

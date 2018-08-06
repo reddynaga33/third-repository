@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [END TO END]">
+  <test name="Sample Test(failed)">
+    <parameter name="Selenium.browser" value="Chrome"/>
+    <classes>
+      <class name="com.cisco.collabNextGen.endtoend.tests.NewDemo">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="tearDownMethod"/>
+          <include name="setupClass"/>
+          <include name="setup"/>
+          <include name="afterEachTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+          <include name="setTestMethodName"/>
+        </methods>
+      </class> <!-- com.cisco.collabNextGen.endtoend.tests.NewDemo -->
+    </classes>
+  </test> <!-- Sample Test(failed) -->
+</suite> <!-- Failed suite [END TO END] -->

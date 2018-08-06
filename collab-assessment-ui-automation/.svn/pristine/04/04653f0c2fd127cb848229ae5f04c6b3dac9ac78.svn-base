@@ -1,0 +1,62 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>END TO END</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:51:41</td>   <td>0</td> <td title="&gt;&gt;ExtentTestNGReportBuilder.beforeSuite()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeSuite</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 17:51:41</td>   <td>332</td> <td title="&gt;&gt;BaseTestSuite.setup(org.testng.ITestContext)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setup</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:51:55</td>   <td>14284</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 17:51:55</td>   <td>14334</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setupClass()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setupClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:51:55</td>   <td>14501</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 17:51:55</td>   <td>14511</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="6984cb">  <td>17/10/25 17:51:55</td>   <td>14512</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="WorkFlowTest.loginTest()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">loginTest</td> 
+  <td>main@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:52:10</td>   <td>29659</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>startReportTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:52:12</td>   <td>31379</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 17:52:12</td>   <td>31380</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="6984cb">  <td>17/10/25 17:52:12</td>   <td>31380</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="WorkFlowTest.adddeviceAndTestConnectivity()[pri:1, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">adddeviceAndTestConnectivity</td> 
+  <td>loginTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:53:19</td>   <td>97985</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>startReportTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:53:20</td>   <td>99678</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 17:53:20</td>   <td>99678</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="6984cb">  <td>17/10/25 17:53:20</td>   <td>99678</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="WorkFlowTest.checkConnectivityStatus()[pri:2, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">checkConnectivityStatus</td> 
+  <td>adddeviceAndTestConnectivity@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:53:58</td>   <td>137828</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>startReportTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 17:53:59</td>   <td>138725</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 17:53:59</td>   <td>138725</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="6984cb">  <td>17/10/25 17:53:59</td>   <td>138726</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="WorkFlowTest.initializeCollection()[pri:3, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">initializeCollection</td> 
+  <td>checkConnectivityStatus@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 18:31:00</td>   <td>2359811</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>startReportTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 18:31:02</td>   <td>2361183</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 18:31:02</td>   <td>2361184</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="6984cb">  <td>17/10/25 18:31:02</td>   <td>2361184</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="WorkFlowTest.startAnalysisJobTest()[pri:4, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">startAnalysisJobTest</td> 
+  <td>initializeCollection@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 18:32:20</td>   <td>2439604</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>startReportTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 18:32:21</td>   <td>2440399</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ExtentTestNGReportBuilder.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 18:32:21</td>   <td>2440400</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BaseTestSuite.setTestMethodName(java.lang.reflect.Method)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&gt;&gt;setTestMethodName</td> 
+<td>&nbsp;</td>  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="6984cb">  <td>17/10/25 18:32:21</td>   <td>2440400</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="WorkFlowTest.startReportTest()[pri:5, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">startReportTest</td> 
+  <td>startAnalysisJobTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="a2ff7f">  <td>17/10/25 18:32:44</td>   <td>2463005</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ExtentTestNGReportBuilder.afterMethod(org.testng.ITestResult)[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>startReportTest@1168924571</td>   <td></td> </tr>
+<tr bgcolor="be7dad">  <td>17/10/25 18:32:46</td>   <td>2465224</td> <td title="&lt;&lt;BaseTestSuite.tearDown()[pri:0, instance:com.cisco.collabNextGen.endtoend.tests.WorkFlowTest@1c57f6b2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>startReportTest@1168924571</td>   <td></td> </tr>
+</table>
